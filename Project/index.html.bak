@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie ie6" dir="ltr" lang="pt-BR" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie ie7" dir="ltr" lang="pt-BR" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie ie8" dir="ltr" lang="pt-BR" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie ie9" dir="ltr" lang="pt-BR" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js no-ie" dir="ltr" lang="pt-BR" xml:lang="pt-br" lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--
+<?php if(strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') || strstr($_SERVER['HTTP_USER_AGENT'],'iPod') || strstr($_SERVER['HTTP_USER_AGENT'],'Android') || strstr($_SERVER['HTTP_USER_AGENT'],'Windows Phone')){ ?>
+<meta name="viewport" content="user-scalable=yes, width=735" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<?php }else if(strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){ ?>
+<meta name="viewport" content="user-scalable=yes, width=980" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<?php } ?>
+-->
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="engenhovelhogo.rss" />
+<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+<link href="_css/style.css" rel="stylesheet/less" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript"> 
+	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://www.cafecomideias.com.br/_util/ie6update/images/"
+	}
+</script>
+<script type="text/javascript" src="http://www.cafecomideias.com.br/_util/ie6update/ie6update.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript">alert('Parece que seu navegador não suporta totalmente HTML5 e CSS3. Você precisa de uma versão mais recente do Internet Explorer, Firefox, Chrome ou Safari para exibir este site corretamente.');</script>
+<![endif]-->
+<script type="text/javascript">
+//nome da pagina
+var pagina = 'home';
+</script>
+<script type="text/javascript" src="_js/Ajax.js"></script>
+<script type="text/javascript" src="_js/jquery.min.js"></script>
+<script type="text/javascript" src="_js/less.js"></script>
+<script type="text/javascript" src="_js/scripts.js"></script>
+<title>Clube de Pesca Engenho Velho | Trindade - Goiás</title>
+<link href="_css/jcarousel.css" rel="stylesheet/less" type="text/css" />
+<script type="text/javascript" src="_js/cycle.js"></script>
+<script type="text/javascript" src="_js/jcarousel.min.js"></script>
+</head>
+<body class="home">
+<!-- header -->
+<header>
+   	<!-- .topo -->
+    <section class="topo cont-center">
+    	<!-- logo -->
+      	<h1><a href="/" title="Clube de Pesca Engenho Velho | Trindade - Goiás" rel="home" id="logo">Clube de Pesca Engenho Velho | Trindade - Goiás</a></h1>
+        <!-- .espaco-vip -->
+        <article class="espaco-vip">
+        	<form name="form_ev" id="form_ev" action="" enctype="multipart/form-data" method="post" onsubmit="return validaEV();">
+            	<h2>Espaço Vip</h2>
+                <label><input name="email" type="text" placeholder="E-mail:" /></label>
+                <label>
+                	<input name="senha" type="password" placeholder="Senha:" />
+                    <input name="bt_ok_ev" type="submit" value="Ok" />
+                    <a id="esqueceu-senha" href="#">Esqueceu sua senha?</a>
+                </label>
+                <span class="clearfix">Não é Cadastrado? <a href="/cadastre-se" title="Cadastre-se">Clique aqui</a>, cadastre-se e tenha acesso ao Espaço VIP.</span>
+            </form>
+            <form name="form_rs" id="form_rs" action="" enctype="multipart/form-data" method="post" onsubmit="return validaRS();">
+            	<h2>Espaço Vip</h2>
+                <label>Informe o seu e-mail abaixo para auxiliarmos na recuparação da sua senha:</label>
+                <label>
+                	<input name="email" type="text" placeholder="E-mail:" />
+                    <input name="bt_ok_ev" type="submit" value="Ok" />
+                    <a id="voltar-espaco-vip" href="#">Voltar</a>
+                </label>
+                <span class="clearfix">Não é Cadastrado? <a href="/cadastre-se" title="Cadastre-se">Clique aqui</a>, cadastre-se e tenha acesso ao Espaço VIP.</span>
+            </form>
+        </article>
+    </section><!-- /.topo -->
+    <!-- .barra-design -->
+    <div class="barra-design"></div>
+    <!-- .banner -->
+    <section class="banner">
+        <div class="banner_in">
+         	<a href="#" target="_parent" title="Teste"><img src="images/_upload/topo/01.jpg" width="2000" height="250" alt="Teste" /></a>
+            <a href="#" target="_parent" title="Teste"><img src="images/_upload/topo/02.jpg" width="2000" height="250" alt="Teste" /></a>
+        </div>
+    </section><!-- /.banner -->
+    <!-- .menu-header -->
+    <nav class="menu-header cont-center">
+    	<select name="menu" onchange="javascript:window.open(this.value, '_self');">
+        	<option value="">Menu</option>
+            <option value="/">Home</option>
+            <option value="/o-clube">O Clube</option>
+            <option value="/restaurante">Restaurante</option>
+            <option value="/fazendinha">Fazendinha</option>
+            <option value="/pescadores">Pescadores</option>
+            <option value="/recordes">Recordes</option>
+            <option value="/promocoes">Promoções</option>
+            <option value="/noticias">Notícias</option>
+            <option value="/reservas">Reservas</option>
+            <option value="/fale-conosco">Fale Conosco</option>
+        </select>
+      	<ul>
+          	<li><a href="/" title="Home">Home</a></li>
+            <li><a href="/o-clube" title="O Clube">O Clube</a></li>
+            <li><a href="/restaurante" title="Restaurante">Restaurante</a></li>
+            <li><a href="/fazendinha" title="Fazendinha">Fazendinha</a></li>
+            <li><a href="/pescadores" title="Pescadores">Pescadores</a></li>
+            <li><a href="/recordes" title="Recordes">Recordes</a></li>
+            <li><a href="/promocoes" title="Promoções">Promoções</a></li>
+            <li><a href="/noticias" title="Notícias">Notícias</a></li>
+            <li><a href="/reservas" title="Reservas">Reservas</a></li>
+            <li><a href="/fale-conosco" title="Fale Conosco">Fale Conosco</a></li>
+        </ul>
+    </nav><!-- /.menu-header -->
+</header><!-- /header -->
+<!-- CONTENT -->
+<section class="cont-center">
+	<!-- .content -->
+	<div class="content">
+    	<!-- .ranking-pescadores -->
+    	<article class="ranking-pescadores">
+        	<script type="text/javascript" src="_js/wz_tooltip.js"></script>
+        	<ul>
+            	<li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 1º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/01.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 2º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/02.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 3º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/03.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 4º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/04.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 5º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/05.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 6º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/06.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 7º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/07.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+                <li>
+                	<a href="/pescadores/ranking" onmouseover="Tip('Cristiano Ribeiro - 8º Lugar/20 a 30 kg')" onmouseout="UnTip()">
+                    	<span><img src="images/_upload/pescadores/08.jpg" width="92" height="55" alt="Nome do Pescador" /></span>
+                    </a>
+                </li>
+            </ul>
+            <a class="bt-ranking-pescadores" href="/pescadores/ranking" title="Ranking de Pescadores">Ranking de Pescadores</a>
+        </article><!-- /.ranking-pescadores -->
+        <!-- .noticias -->
+        <article class="noticias">
+        	<h2>Notícias</h2>
+            <a href="/noticias/yyyy-mm-dd/novo-recorde" title="Novo recorde, pescador Victor Ricardo pesca Tambaqui de 29kg">
+                <img src="images/_upload/noticias/01.jpg" width="480" height="230" alt="Novo recorde, pescador Victor Ricardo pesca Tambaqui de 29kg" />
+                Novo recorde, pescador Victor Ricardo pesca Tambaqui de 29kg
+            </a>
+        </article><!-- /.noticias -->
+        <!-- .promocoes -->
+        <article class="promocoes">
+        	<h2>Promoções</h2>
+            <a href="/promocoes/yyyy-mm-dd/batata-frita" title="Porção de Batata Frita - 50% OFF">
+                <img src="images/_upload/promocoes/01.jpg" width="480" height="230" alt="Porção de Batata Frita - 50% OFF" />
+                Porção de Batata Frita - 50% OFF
+            </a>
+        </article><!-- /.promocoes -->
+        <!-- .destaque -->
+        <article class="destaque">
+        	<h2>Destaque</h2>
+            <!-- barra -->
+            <div class="barra"></div>
+            <!-- mascara -->
+            <div class="mascara"></div>
+            <!-- espaco-vip -->
+            <div class="espaco-vip">
+            	<h4>Cadastre-se e tenha acesso ao</h4>
+                <h3>ESPAÇO VIP</h3>
+                <a href="/cadastre-se" title="Cadastrar">Cadastrar</a>
+            </div>
+            <!-- paginacao -->
+            <a class="next" href="#" title="Próximo">Próximo</a>
+            <a class="prev" href="#" title="Anterior">Anterior</a>
+            <ul>
+            	<li>
+                    <a href="#" target="_self" title="Torneio Relâmpago entre amigos">
+                        <img src="images/_upload/destaque/01.jpg" width="492" height="484" alt="Torneio Relâmpago entre amigos " />
+                        <span>
+                        	<em>20 de Junho de 2013</em>
+							<br />
+                            <strong>Torneio Relâmpago entre amigos</strong>
+                        </span>
+                    </a>
+            	</li>
+            </ul>
+        </article><!-- /.destaque -->
+        <!-- .botoes -->
+        <article class="botoes">
+        	<a href="/restaurante" title="Restaurante">
+            	<img src="images/_upload/botoes/01.jpg" width="320" height="125" alt="Restaurante" />
+            </a>
+            <a href="/reservas" title="Quiosque">
+            	<img src="images/_upload/botoes/02.jpg" width="320" height="125" alt="Quiosque" />
+            </a>
+            <a href="/fazendinha" title="Fazendinha">
+            	<img src="images/_upload/botoes/03.jpg" width="320" height="125" alt="Fazendinha" />
+            </a>
+        </article><!-- /.botoes -->
+        <!-- .parceiros -->
+        <article class="parceiros">
+        	<h2>Parceiros</h2>
+            <!-- barra -->
+            <div class="barra"></div>
+            <ul>
+            	<li><a href="/parceiros"><img src="images/_upload/parceiros/peixe-urbano.png" width="145" height="75" alt="Peixe Urbano" /></a></li>
+            	<li><a href="/parceiros"><img src="images/_upload/parceiros/mare-mansa.png" width="148" height="75" alt="Maré Mansa" /></a></li>
+            	<li><a href="/parceiros"><img src="images/_upload/parceiros/tribos-da-pesca.png" width="136" height="75" alt="Tribos da Pesca" /></a></li>
+            </ul>
+            <!-- paginacao -->
+            <a class="prev" href="#" title="Anterior">Anterior</a>
+            <a class="next" href="#" title="Próximo">Próximo</a>
+        </article><!-- /.parceiros -->
+        <!-- .localizacao -->
+        <article class="localizacao">
+        	<h2>Localização</h2>
+            <!-- barra -->
+            <div class="barra"></div>
+            <iframe width="480" height="210" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt&amp;geocode=&amp;q=engenho+velho+trindade&amp;aq=&amp;sll=-15.947269,-49.579061&amp;sspn=19.01873,33.815918&amp;ie=UTF8&amp;hq=engenho+velho&amp;hnear=Trindade+-+Goi%C3%A1s&amp;ll=-16.639826,-49.451734&amp;spn=0.037172,0.066047&amp;t=h&amp;z=14&amp;iwloc=A&amp;cid=203949430617944072&amp;output=embed"></iframe>
+        </article><!-- /.parceiros -->
+    </div><!-- /.content -->	
+</section>
+<!-- FOOTER -->
+<footer>
+	<!-- .rodape -->
+	<section class="rodape cont-center">
+    	<div class="clearfix">
+        	<!-- .redes-sociais -->
+        	<div class="one">
+                <ul class="redes-sociais">
+                    <li><a href="http://www.facebook.com" class="facebook" title="Facebook">Facebook</a></li>
+                    <li><a href="http://www.twitter.com" class="twitter" title="Twitter">Twitter</a></li>
+                    <li><a href="http://www.youtube.com" class="youtube" title="Youtube">Youtube</a></li>
+                </ul>
+            </div>
+            <!-- .telefone -->
+            <div class="two telefone">
+        		<h2>(62) 3294-5682</h2>
+            </div>
+        </div>
+        <div class="clearfix">
+            <!-- .copyright -->
+        	<div class="one">
+            	<p class="copyright">
+            		© 2007-2013 Clube de Pesca Engenho Velho - Trindade/GO. Todos os direitos reservados.
+                	<br />
+                	Proibida a reprodução total ou parcial do conteúdo e padrão visual sem expressa permissão. 
+            	</p>
+            </div>
+            <!-- .developed -->
+            <div class="two">
+        		<a href="http://www.cafecomideias.com.br" target="_blank" class="cci" title="Agência Café com Ideias"><img src="images/logo-cafe-com-ideias.png" width="60" height="21" alt="Agência Café com Ideias" /></a>
+            </div>
+        </div>
+    </section><!-- /.rodape -->
+    <a id="bt-topo" href="#" title="Topo da Página">Topo da Página</a>
+    <!-- .menu-footer -->
+    <nav class="menu-footer">
+    	<select name="menu" onchange="javascript:window.open(this.value, '_self');">
+        	<option value="">Menu</option>
+            <option value="/">Home</option>
+            <option value="/o-clube">O Clube</option>
+            <option value="/restaurante">Restaurante</option>
+            <option value="/fazendinha">Fazendinha</option>
+            <option value="/pescadores">Pescadores</option>
+            <option value="/recordes">Recordes</option>
+            <option value="/promocoes">Promoções</option>
+            <option value="/noticias">Notícias</option>
+            <option value="/reservas">Reservas</option>
+            <option value="/fale-conosco">Fale Conosco</option>
+        </select>
+    	<ul class="cont-center">
+        	<li><a href="/" title="Home">Home</a></li>
+            <li><a href="/o-clube" title="O Clube">O Clube</a></li>
+            <li><a href="/restaurante" title="Restaurante">Restaurante</a></li>
+            <li><a href="/fazendinha" title="Fazendinha">Fazendinha</a></li>
+            <li><a href="/pescadores" title="Pescadores">Pescadores</a></li>
+            <li><a href="/recordes" title="Recordes">Recordes</a></li>
+            <li><a href="/promocoes" title="Promoções">Promoções</a></li>
+            <li><a href="/noticias" title="Notícias">Notícias</a></li>
+            <li><a href="/reservas" title="Reservas">Reservas</a></li>
+            <li><a href="/fale-conosco" title="Fale Conosco">Fale Conosco</a></li>
+        </ul>
+    </nav><!-- .menu-footer -->
+</footer>
+</div>
+</body>
+</html>

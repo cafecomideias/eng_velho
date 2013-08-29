@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* ---------------------------
+   Estrutura CSS
+--------------------------- */
+#container{
+	width:100%;
+	border:0;
+	background-repeat:repeat;
+}
+	#header{
+		width:100%;
+		border:0;
+		height:111px;
+		background-color:#666;
+		background-repeat:repeat-x;
+		clear:both;
+	}
+	#content{
+		width:100%;
+		border:0;
+		height:auto;
+		background-color:#999;
+		clear:both;
+	}
+	#footer{
+		width:100%;
+		border:0;
+		height:218px;
+		background-color:#CCC;
+		background-repeat:repeat-x;
+		clear:both;
+	}

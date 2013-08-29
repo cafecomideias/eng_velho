@@ -1,0 +1,25 @@
+.campo{
+	font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-style:normal;
+	color:#000;
+	border:1px dotted #000;
+	background-color:#FFFFFF;
+	padding:5px;
+	height:auto;
+}
+
+.botao{
+	background:#FFFFFF;
+	font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-style:bold;
+	color:#000;
+	border:1px dotted #000;
+	text-align:center;
+	padding:5px;
+}
+
+.marg{
+	margin-bottom:5px;
+}

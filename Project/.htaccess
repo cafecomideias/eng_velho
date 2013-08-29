@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^ajax/categoria/?$ painel/categoria.php [NC]
+RewriteRule ^upload/galeria/?$ painel/upload-galeria.php [NC]
+RewriteRule ^([a-zA-Z-]+)/?$ $1.php [NC,L]
