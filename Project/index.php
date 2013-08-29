@@ -4,7 +4,6 @@ require_once('inc_head.php');
 require_once '../Di/Container.php'; 
 $di = new Container();
 
-
 $modelNot = $di->getModel('noticias');
 $noticia = $modelNot->fetchLast();
 $noticia->img = str_replace('../', "", $noticia->img);
